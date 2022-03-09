@@ -8,7 +8,7 @@ int main()
 {
     string operation;
     long double result;
-    cout << "Calculator by CIP_ \nAvailable operations: + - / * ^ ! s(for squarr root) cos sin tan" << endl;
+    cout << "Calculator by CIP_ \nAvailable operations: + - / * ^ ! sqrt cos sin tan" << endl;
     cout << "Enter operation: ";
     cin >> operation;
 
@@ -97,7 +97,7 @@ int main()
             cout << fac;
         }
         
-    } else if (operation == "s")
+    } else if (operation == "sqrt")
     {
         int num;
 

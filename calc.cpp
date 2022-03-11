@@ -9,7 +9,7 @@ int main()
     string operation;
     long double result;
     cout << "Calculator by CIP_" << endl;
-    cout << "Available operations: + - / * ^ ! sqrt cos sin tan" << endl;
+    cout << "Available operations: + - / * ^ ! sqrt cos sin tan ctan(cotan)" << endl;
     cout << "Enter operation: ";
     cin >> operation;
 
@@ -140,6 +140,15 @@ int main()
         cin >> num;
 
         result = tan(num);
+        cout << result;
+    } else if (operation == "cotan" || operation == "ctan")
+    {
+        long double num;
+
+        cout << "Enter number: ";
+        cin >> num;
+
+        result = cos(num) / sin(num);
         cout << result;
     }
 

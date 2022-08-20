@@ -1,7 +1,7 @@
 # EasyCalc
 My own mini calculator with some extra features
 
-# Function
+# Features
 This calculator has standard mathematical operations and trigonometric functions
 
 # Building

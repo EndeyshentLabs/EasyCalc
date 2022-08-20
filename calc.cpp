@@ -13,7 +13,7 @@ int main()
     cout << "Enter operation: ";
     cin >> operation;
 
-    if (operation == "+")
+    if (operation == "+" || operation == "plus")
     {
         long double summand1;
         long double summand2;
@@ -26,7 +26,7 @@ int main()
 
         result = summand1 + summand2;
         cout << result;
-    } else if (operation == "-")
+    } else if (operation == "-" || operation == "minus")
     {
         long double min1;
         long double min2;
@@ -39,7 +39,7 @@ int main()
         
         result = min1 - min2;
         cout << result;
-    } else if (operation == "/")
+    } else if (operation == "/" || operation == "divide")
     {
         long double div1;
         long double div2;
@@ -52,7 +52,7 @@ int main()
 
         result = div1 / div2;
         cout << result;
-    } else if (operation == "*")
+    } else if (operation == "*" || operation == "multiply")
     {
         long double multiplier1;
         long double multiplier2;
@@ -65,7 +65,7 @@ int main()
 
         result = multiplier1 * multiplier2;
         cout << result;
-    } else if (operation == "^")
+    } else if (operation == "^" || operation == "**" || operation == "power")
     {
         long double num1;
         long double num2;
@@ -78,7 +78,7 @@ int main()
 
         result = pow(num1, num2);
         cout << result;
-    } else if (operation == "!")
+    } else if (operation == "!" || operation == "factorial")
     {
         int num;
         long double fac = 1.0;
@@ -98,7 +98,7 @@ int main()
             cout << fac;
         }
         
-    } else if (operation == "sqrt")
+    } else if (operation == "sqrt" || operation == "root" || operation == "square root")
     {
         int num;
 
@@ -114,7 +114,7 @@ int main()
             cout << result;
         }
 
-    } else if (operation == "cos")
+    } else if (operation == "cos" || operation == "cosine")
     {
     long double num;
 
@@ -123,7 +123,7 @@ int main()
 
     result = cos(num);
     cout << result;
-    } else if (operation == "sin")
+    } else if (operation == "sin" || operation == "sine")
     {
         long double num;
 
@@ -132,7 +132,7 @@ int main()
 
         result = sin(num);
         cout << result;
-    } else if (operation == "tan" || operation == "tg")
+    } else if (operation == "tan" || operation == "tg" || operation == "tangens" || operation == "tangent")
     {
         long double num;
 
@@ -141,7 +141,7 @@ int main()
 
         result = tan(num);
         cout << result;
-    } else if (operation == "cotan" || operation == "ctan")
+    } else if (operation == "cotan" || operation == "ctan" || operation == "cotangens" || operation == "cotangent")
     {
         long double num;
 
@@ -150,6 +150,10 @@ int main()
 
         result = cos(num) / sin(num);
         cout << result;
+    } else
+    {
+        cout << "[ERROR]: Please enter valid operation!" << endl;
+        return 1;
     }
 
 

@@ -87,7 +87,8 @@ int main()
         cin >> num;
         if (num < 0)
         {
-            cout << "ERROR! Please enter POSITIVE number." << endl;
+            cerr << "[ERROR]: Please enter POSITIVE number." << endl;
+			return 1;
         } else
         {
             for (int i = 1; i <= num; ++i)
@@ -106,7 +107,8 @@ int main()
         cin >> num;
         if (num < 0)
         {
-            cout << "ERROR! Please enter POSITIVE number." << endl;
+            cerr << "[ERROR]: Please enter POSITIVE number." << endl;
+			return 1;
         } else
         {
             result = sqrt(num);
@@ -152,7 +154,7 @@ int main()
         cout << result;
     } else
     {
-        cout << "[ERROR]: Please enter valid operation!" << endl;
+        cerr << "[ERROR]: Please enter valid operation!" << endl;
         return 1;
     }
 
